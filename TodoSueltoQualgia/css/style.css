@@ -1,0 +1,41 @@
+/* SELECTO DE TIPO ETIQUETA */
+h1 {
+    color: red;
+    display: inline;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+footer ul li {
+    color: rgba(161, 10, 10, 0.63);
+    font-size: 15px;
+}
+
+/* selector de tipo clase -- a lo que no le vamos a poner style es a body  */
+
+.tituloTable {
+    color: blue;
+    background-color: bisque;
+}
+
+.fechasImportantes {
+    color: rgba(255, 0, 0, 0.69);
+    background-color: rgba(208, 95, 95, 0.426);
+}
+
+nav {
+    color: rgb(165, 42, 42);
+    background-color: rgba(255, 127, 80, 0.098);
+}
+.imagen__titulo{
+    width: 100px;
+    padding-right: 10px;
+}
+
+/* selector de tipo ID # */
+
+
+/* nomenclatura */
+/* 1- camelCase => letraGrandeOscura */
+/* 2- snake_case => letra_grande_oscura */
+/* 3- kebab-case => letra-grande-oscura */
