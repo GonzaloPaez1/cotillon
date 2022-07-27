@@ -1,36 +1,127 @@
-/* SELECTO DE TIPO ETIQUETA */
+*{
+    margin: 0px; /* MARGEN EXTERNO */
+    padding: 0px; /* MARGEN INTERNO */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
 h1 {
-    color: red;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #049efc;
+}
+
+p {
+    padding: 0 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+
+header {
+    background-color: rgba(255, 255, 255, 0.376);
+    height: 70px;
+}
+
+.header__logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header__lista {
+    display: flex; 
+    list-style: none; 
+    padding: 0 16px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+ }
+ 
+.header__item {
+    padding: 20px; 
+}
+
+.header__item a {
+    color: rgba(255, 204, 0, 0.717);
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+a:visited{ 
+    background-color: rgb(255, 0, 0);
+}
+
+.header__item:hover{
+    transform: scale(1.5, 1.5);
+    transition: all 0.5s;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-areas: "gmail gmail   redes "
+                         "gmail gmail   derechos";
+    background-color: #049efc;
+    padding: 24px;
+}
+
+.footer__gmail {
+    grid-area: gmail;
+}
+
+.footer__redes {
+    grid-area: redes; 
+    display: flex;
+    justify-content: center;
+}
+
+.footer__derechos {
+    grid-area: derechos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__iconos {
+    width: 70px;
+    height: 70px;
+    margin: 12px;
+}
+
+.footer__parrafo{
+    width: auto;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.parrafo{
     display: inline;
-    padding-top: 0px;
-    padding-left: 0px;
+    border: 3px dashed black;
+    border-width: auto;
 }
 
-footer ul li {
-    color: rgba(161, 10, 10, 0.63);
-    font-size: 15px;
-}
 
-/* selector de tipo clase -- a lo que no le vamos a poner style es a body  */
 
-.tituloTable {
-    color: blue;
-    background-color: bisque;
-}
 
-.fechasImportantes {
-    color: rgba(255, 0, 0, 0.69);
-    background-color: rgba(208, 95, 95, 0.426);
-}
 
-nav {
-    color: rgb(165, 42, 42);
-    background-color: rgba(255, 127, 80, 0.098);
-}
-.imagen__titulo{
-    width: 100px;
-    padding-right: 10px;
-}
 
 /* selector de tipo ID # */
 
