@@ -1,25 +1,38 @@
-* {
-  margin: 0px;
-  /* MARGEN EXTERNO */
-  padding: 0px;
-  /* MARGEN INTERNO */ }
+/* footer */
+footer {
+  display: grid;
+  grid-template-areas: "gmail gmail   redes " "gmail gmail   derechos";
+  background-color: #049efc;
+  padding: 24px; }
 
-body {
-  font-family: 'Roboto', sans-serif; }
+.footer__gmail {
+  grid-area: gmail; }
 
-h1 {
-  font-family: 'Pacifico', cursive;
-  text-align: center; }
+.footer__redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center; }
 
-h2 {
-  font-family: 'Pacifico', cursive;
-  color: #049efc; }
+.footer__derechos {
+  grid-area: derechos;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-p {
-  padding: 0 16px; }
+.footer__iconos {
+  width: 70px;
+  height: 70px;
+  margin: 12px; }
 
-ul {
-  list-style: none; }
+.footer__parrafo {
+  width: auto;
+  font-weight: 600;
+  font-size: larger; }
+
+.parrafo {
+  display: inline;
+  border: 3px dashed black;
+  border-width: auto; }
 
 /* header */
 header {
@@ -59,41 +72,28 @@ a:visited {
   transform: scale(1.5, 1.5);
   transition: all 0.5s; }
 
-/* footer */
-footer {
-  display: grid;
-  grid-template-areas: "gmail gmail   redes " "gmail gmail   derechos";
-  background-color: #049efc;
-  padding: 24px; }
+* {
+  margin: 0px;
+  /* MARGEN EXTERNO */
+  padding: 0px;
+  /* MARGEN INTERNO */ }
 
-.footer__gmail {
-  grid-area: gmail; }
+body {
+  font-family: 'Roboto', sans-serif; }
 
-.footer__redes {
-  grid-area: redes;
-  display: flex;
-  justify-content: center; }
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center; }
 
-.footer__derechos {
-  grid-area: derechos;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #049efc; }
 
-.footer__iconos {
-  width: 70px;
-  height: 70px;
-  margin: 12px; }
+p {
+  padding: 0 16px; }
 
-.footer__parrafo {
-  width: auto;
-  font-weight: 600;
-  font-size: larger; }
-
-.parrafo {
-  display: inline;
-  border: 3px dashed black;
-  border-width: auto; }
+ul {
+  list-style: none; }
 
 /* selector de tipo ID # */
 /* nomenclatura */
