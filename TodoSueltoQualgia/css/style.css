@@ -131,7 +131,8 @@ h1 {
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: orange;
-  text-shadow: 1px 1px 4px orange; }
+  text-shadow: 1px 1px 4px orange;
+  margin: 10px; }
 
 h2 {
   font-family: 'Pacifico', cursive;
