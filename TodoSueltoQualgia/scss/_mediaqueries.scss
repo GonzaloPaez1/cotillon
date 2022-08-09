@@ -2,6 +2,128 @@
 
 @media (min-width: 320px) and (max-width: 575px) {
 
+    header {
+        background-color: white;
+        height: auto;
+        margin: 10px;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+    
+    .header__logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .header__lista {
+        display: flex; 
+        list-style: none; 
+        padding: 0 16px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .header__nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     
+    .header__item {
+        padding: 20px; 
+    }
+    
+    .header__item a {
+        color: rgba(255, 204, 0, 0.717);
+        text-decoration: none;
+        font-weight: 700;
+    }
+    /* header */
+    
+/* main_contacto */
+.main__contacto{
+    display: block;
+    }
+    .main__contacto-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .main__parrafo-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    /* main_contacto */
+
+/* sobrenosotros_main */
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 5px;
+    }
+/* sobrenosotros_main */
+
+    /* footer */
+    
+    footer {
+        display: grid;
+        grid-template-areas: "gmail"
+                             "redes"
+                             "derechos";
+        background-color:rgba(255, 166, 0, 0.476);
+        padding: 24px;
+    }
+    
+    .footer__gmail {
+        grid-area: gmail;
+    }
+    
+    .footer__redes {
+        grid-area: redes; 
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer__derechos {
+        grid-area: derechos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__iconos {
+        width: 70px;
+        height: 70px;
+        margin: 12px;
+    }
+    
+    .footer__parrafo{
+        width: auto;
+        font-weight: 600;
+        font-size: larger;
+    }
+    
+    .parrafo{
+        display: inline;
+        border: 3px dashed black;
+        border-width: auto;
+        font-size: 15px;
+    }
+    /* footer */
 }
 
 
@@ -11,4 +133,131 @@
 
 /* @media (min-width: 576px) and (max-width: 992)*/
 
-@media (min-width: 576px) and (max-width: 992px) {}
+@media (min-width: 576px) and (max-width: 992px) {
+/* header */
+
+header {
+    background-color: white;
+    height: auto;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+
+.header__logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header__lista {
+    display: flex; 
+    list-style: none; 
+    padding: 0 16px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+.header__item {
+    padding: 20px; 
+}
+
+.header__item a {
+    color: rgba(255, 204, 0, 0.717);
+    text-decoration: none;
+    font-weight: 700;
+}
+/* header */
+
+/* main_contacto */
+.main__contacto{
+display: block;
+}
+.main__contacto-form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.main__parrafo-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+/* main_contacto */
+
+/* sobrenosotros_main */
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 5px;
+    }
+/* sobrenosotros_main */
+
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-areas: "gmail"
+                         "redes"
+                         "derechos";
+    background-color:rgba(255, 166, 0, 0.476);
+    padding: 24px;
+}
+
+.footer__gmail {
+    grid-area: gmail;
+}
+
+.footer__redes {
+    grid-area: redes; 
+    display: flex;
+    justify-content: center;
+}
+
+.footer__derechos {
+    grid-area: derechos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__iconos {
+    width: 70px;
+    height: 70px;
+    margin: 12px;
+}
+
+.footer__parrafo{
+    width: auto;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.parrafo{
+    display: inline;
+    border: 3px dashed black;
+    border-width: auto;
+    font-size: 15px;
+}
+/* footer */
+
+}
