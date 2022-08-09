@@ -3,11 +3,17 @@
 header {
     background-color: rgba(255, 255, 255, 0.376);
     height: 70px;
+    margin: 10px;
 }
 
 .header__logo {
     width: 60px;
     height: 60px;
+}
+.header__logo:hover{
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+
 }
 
 .header__lista {
@@ -34,6 +40,7 @@ header {
     text-decoration: none;
     font-weight: 700;
     
+    
 }
 
 a:visited{ 
@@ -43,4 +50,5 @@ a:visited{
 .header__item:hover{
     transform: scale(1.5, 1.5);
     transition: all 0.5s;
+
 }

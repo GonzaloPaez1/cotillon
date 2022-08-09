@@ -1,8 +1,49 @@
+.main__parrafo {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.main__contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px; }
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.main__parrafo-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.main__p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 15px 20px; }
+
+.carousel {
+  border: 8px solid black;
+  border-radius: 15px;
+  box-shadow: 5px 15px 20px; }
+
 /* footer */
 footer {
   display: grid;
   grid-template-areas: "gmail gmail   redes " "gmail gmail   derechos";
-  background-color: #049efc;
+  background-color: rgba(255, 166, 0, 0.476);
   padding: 24px; }
 
 .footer__gmail {
@@ -37,11 +78,16 @@ footer {
 /* header */
 header {
   background-color: rgba(255, 255, 255, 0.376);
-  height: 70px; }
+  height: 70px;
+  margin: 10px; }
 
 .header__logo {
   width: 60px;
   height: 60px; }
+
+.header__logo:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s; }
 
 .header__lista {
   display: flex;
@@ -83,7 +129,9 @@ body {
 
 h1 {
   font-family: 'Pacifico', cursive;
-  text-align: center; }
+  text-align: center;
+  color: orange;
+  text-shadow: 1px 1px 4px orange; }
 
 h2 {
   font-family: 'Pacifico', cursive;
