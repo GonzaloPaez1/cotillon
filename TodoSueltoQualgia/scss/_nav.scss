@@ -4,6 +4,7 @@ header {
     background-color: rgba(255, 255, 255, 0.376);
     height: 70px;
     margin: 10px;
+    border-bottom: 1px solid black;
 }
 
 .header__logo {
@@ -43,9 +44,7 @@ header {
     
 }
 
-a:visited{ 
-    background-color: rgb(255, 0, 0);
-}
+
 
 .header__item:hover{
     transform: scale(1.5, 1.5);

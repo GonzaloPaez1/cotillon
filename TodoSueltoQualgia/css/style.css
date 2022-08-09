@@ -3,7 +3,8 @@
   margin: 30px;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid black; }
 
 .main__contacto {
   display: flex;
@@ -38,6 +39,20 @@
   border: 8px solid black;
   border-radius: 15px;
   box-shadow: 5px 15px 20px; }
+
+.main__sobrenosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-bottom: 40px; }
+
+.sobrenosotros {
+  text-align: center; }
+
+.ubicacion {
+  margin-top: 10px; }
 
 /* footer */
 footer {
@@ -79,7 +94,8 @@ footer {
 header {
   background-color: rgba(255, 255, 255, 0.376);
   height: 70px;
-  margin: 10px; }
+  margin: 10px;
+  border-bottom: 1px solid black; }
 
 .header__logo {
   width: 60px;
@@ -111,9 +127,6 @@ header {
   text-decoration: none;
   font-weight: 700; }
 
-a:visited {
-  background-color: red; }
-
 .header__item:hover {
   transform: scale(1.5, 1.5);
   transition: all 0.5s; }
@@ -136,7 +149,10 @@ h1 {
 
 h2 {
   font-family: 'Pacifico', cursive;
-  color: #049efc; }
+  color: rgba(255, 166, 0, 0.476);
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 p {
   padding: 0 16px; }
