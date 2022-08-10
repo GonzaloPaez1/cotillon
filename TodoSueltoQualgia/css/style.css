@@ -8,32 +8,30 @@
 
 .main__contacto {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   margin: 30px; }
+  .main__contacto .main__parrafo-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .main__contacto .main__parrafo-2 .main__p {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 3px solid black;
+      border-radius: 10px;
+      box-shadow: 5px 15px 20px; }
 
 .main__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.main__parrafo-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.main__p {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 3px solid black;
-  border-radius: 10px;
-  box-shadow: 5px 15px 20px; }
 
 .carousel {
   border: 8px solid black;
@@ -47,9 +45,8 @@
   flex-wrap: wrap;
   margin: 10px;
   margin-bottom: 40px; }
-
-.sobrenosotros {
-  text-align: center; }
+  .main__sobrenosotros .sobrenosotros {
+    text-align: center; }
 
 .ubicacion {
   margin-top: 10px; }
@@ -60,35 +57,29 @@ footer {
   grid-template-areas: "gmail gmail   redes " "gmail gmail   derechos";
   background-color: rgba(255, 166, 0, 0.476);
   padding: 24px; }
-
-.footer__gmail {
-  grid-area: gmail; }
-
-.footer__redes {
-  grid-area: redes;
-  display: flex;
-  justify-content: center; }
-
-.footer__derechos {
-  grid-area: derechos;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.footer__iconos {
-  width: 70px;
-  height: 70px;
-  margin: 12px; }
-
-.footer__parrafo {
-  width: auto;
-  font-weight: 600;
-  font-size: larger; }
-
-.parrafo {
-  display: inline;
-  border: 3px dashed black;
-  border-width: auto; }
+  footer .footer__gmail {
+    grid-area: gmail; }
+  footer .footer__redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: center; }
+  footer .footer__derechos {
+    grid-area: derechos;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer .footer__iconos {
+    width: 70px;
+    height: 70px;
+    margin: 12px; }
+  footer .footer__parrafo {
+    width: auto;
+    font-weight: 600;
+    font-size: larger; }
+  footer .parrafo {
+    display: inline;
+    border: 3px dashed black;
+    border-width: auto; }
 
 /* header */
 header {
@@ -96,40 +87,33 @@ header {
   height: 70px;
   margin: 10px;
   border-bottom: 1px solid black; }
-
-.header__logo {
-  width: 60px;
-  height: 60px; }
-
-.header__logo:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 0.5s; }
-
-.header__lista {
-  display: flex;
-  list-style: none;
-  padding: 0 16px;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-grow: 1; }
-
-.header__nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; }
-
-.header__item {
-  padding: 20px; }
-
-.header__item a {
-  color: rgba(255, 204, 0, 0.717);
-  text-decoration: none;
-  font-weight: 700; }
-
-.header__item:hover {
-  transform: scale(1.5, 1.5);
-  transition: all 0.5s; }
+  header .header__logo {
+    width: 60px;
+    height: 60px; }
+    header .header__logo:hover {
+      transform: scale(1.1, 1.1);
+      transition: all 0.5s; }
+  header .header__lista {
+    display: flex;
+    list-style: none;
+    padding: 0 16px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1; }
+  header .header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+  header .header__item {
+    padding: 20px; }
+    header .header__item a {
+      color: rgba(255, 204, 0, 0.717);
+      text-decoration: none;
+      font-weight: 700; }
+    header .header__item:hover {
+      transform: scale(1.5, 1.5);
+      transition: all 0.5s; }
 
 /* @media (min-width: 320px) and (max-width: 575px)*/
 @media (min-width: 320px) and (max-width: 575px) {
@@ -312,6 +296,11 @@ header {
     font-size: 15px; }
   /* footer */ }
 
+.background-centrado, .card-img-top {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 * {
   margin: 0px;
   /* MARGEN EXTERNO */
@@ -333,7 +322,16 @@ h2 {
   color: rgba(255, 166, 0, 0.476);
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
+
+h3 {
+  font-family: 'Pacifico';
+  color: #d6d207;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center; }
 
 p {
   padding: 0 16px; }
