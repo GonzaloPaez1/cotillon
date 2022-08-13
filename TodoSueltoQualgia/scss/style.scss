@@ -39,7 +39,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 h3 {
@@ -49,8 +49,14 @@ h3 {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    
 }
+
+h5 {
+    font-family: 'Pacifico';
+    font-size: 30px;
+    border-bottom: 1px solid black;
+}
+
 p {
     padding: 0 16px;
 }
