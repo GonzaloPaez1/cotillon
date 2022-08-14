@@ -141,6 +141,7 @@
 
     .footer__gmail {
         grid-area: gmail;
+        
     }
 
     .footer__redes {
@@ -155,6 +156,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
         
       
         
@@ -328,6 +330,10 @@
 
     .footer__gmail {
         grid-area: gmail;
+        .footer__gmail-1{
+            margin-inline: 100px;
+        
+        }
     }
 
     .footer__redes {
@@ -342,6 +348,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
       
         
     }
