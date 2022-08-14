@@ -1,6 +1,5 @@
 .main__parrafo {
   display: flex;
-  margin: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -49,17 +48,39 @@
   box-shadow: 5px 15px 20px; }
 
 .main__sobrenosotros {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   flex-wrap: wrap;
   margin: 10px;
+  margin-top: 40px;
   margin-bottom: 40px; }
   .main__sobrenosotros .sobrenosotros {
-    text-align: center; }
-
-.ubicacion {
-  margin-top: 10px; }
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 15px 20px; }
+    .main__sobrenosotros .sobrenosotros__titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 15px; }
+    .main__sobrenosotros .sobrenosotros span {
+      margin: 10px; }
+  .main__sobrenosotros .main__video {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main__sobrenosotros .main__video iframe {
+      width: 400px;
+      height: 400px; }
 
 /* footer */
 footer {
@@ -177,12 +198,40 @@ header {
     margin-top: 5px; }
   /* main_contacto */
   /* sobrenosotros_main */
-  .ubicacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    margin: 5px; }
+  .main__sobrenosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .main__sobrenosotros .sobrenosotros {
+      grid-column: auto;
+      grid-row: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: justify;
+      border: 3px solid black;
+      border-radius: 10px;
+      box-shadow: 5px 15px 20px; }
+      .main__sobrenosotros .sobrenosotros__titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px; }
+      .main__sobrenosotros .sobrenosotros span {
+        margin: 10px; }
+    .main__sobrenosotros .main__video {
+      grid-column: auto;
+      grid-row: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px; }
+      .main__sobrenosotros .main__video iframe {
+        width: 300px;
+        height: 300px; }
   /* sobrenosotros_main */
   /* footer */
   footer {
@@ -269,12 +318,38 @@ header {
     margin-top: 5px; }
   /* main_contacto */
   /* sobrenosotros_main */
-  .ubicacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    margin: 5px; }
+  .main__sobrenosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .main__sobrenosotros .sobrenosotros {
+      grid-column: auto;
+      grid-row: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: justify;
+      border: 3px solid black;
+      border-radius: 10px;
+      box-shadow: 5px 15px 20px; }
+      .main__sobrenosotros .sobrenosotros__titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px; }
+      .main__sobrenosotros .sobrenosotros span {
+        margin: 10px; }
+    .main__sobrenosotros .main__video {
+      grid-column: auto;
+      grid-row: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px; }
   /* sobrenosotros_main */
   /* footer */
   footer {
@@ -334,7 +409,7 @@ h1 {
   text-align: center;
   color: orange;
   text-shadow: 1px 1px 4px orange;
-  margin: 10px; }
+  margin-top: 30px; }
 
 h2 {
   font-family: 'Pacifico', cursive;
@@ -342,7 +417,8 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px; }
 
 h3 {
   font-family: 'Pacifico';
