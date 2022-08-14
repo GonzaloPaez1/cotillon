@@ -61,26 +61,41 @@ main section form{
 
 /* main_index */
 
-    /* main_contacto */
-    .main__contacto {
-        display: block;
-    }
+ /* main_contacto */
+.main__contacto {
+     display: block;
+ }
 
-    .main__contacto-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+ .main__contacto-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    }
+}
 
-    .main__parrafo-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5px;
+.main__parrafo-2 {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     margin-top: 5px;
+ }
+ 
+ .main__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .main__form-imput{
+        border: 1px solid black;
+        width: 250px;
+        }
+        
+   
     }
+    
+   
 
     /* main_contacto */
 
