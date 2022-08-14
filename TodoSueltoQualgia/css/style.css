@@ -47,6 +47,9 @@
   border-radius: 15px;
   box-shadow: 5px 15px 20px; }
 
+main section form {
+  padding-inline: 100px; }
+
 .main__sobrenosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,7 +121,8 @@ header {
   background-color: white;
   height: 70px;
   margin: 10px;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid black;
+  padding-top: 4px; }
   header .header__logo {
     width: 60px;
     height: 60px; }
@@ -182,6 +186,10 @@ header {
         text-decoration: none;
         font-weight: 700; }
   /* header */
+  /* main_index */
+  main section form {
+    padding-inline: 2px; }
+  /* main_index */
   /* main_contacto */
   .main__contacto {
     display: block; }
@@ -303,6 +311,10 @@ header {
         text-decoration: none;
         font-weight: 700; }
   /* header */
+  /* main_index */
+  main section form {
+    padding-inline: 60px; }
+  /* main_index */
   /* main_contacto */
   .main__contacto {
     display: block; }
