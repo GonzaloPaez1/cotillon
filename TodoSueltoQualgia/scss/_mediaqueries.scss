@@ -106,14 +106,18 @@
     .footer__redes {
         grid-area: redes;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .footer__derechos {
         grid-area: derechos;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        
+      
+        
     }
 
     .footer__iconos {
@@ -253,14 +257,17 @@
     .footer__redes {
         grid-area: redes;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .footer__derechos {
         grid-area: derechos;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+      
+        
     }
 
     .footer__iconos {
