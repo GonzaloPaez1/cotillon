@@ -159,50 +159,42 @@ main section form{
             "derechos";
         background-color: rgba(255, 166, 0, 0.476);
         padding: 24px;
+        .footer__gmail {
+            grid-area: gmail;
+            
+        }
+    
+        .footer__redes {
+            grid-area: redes;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .footer__derechos {
+            grid-area: derechos;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .footer__iconos {
+            width: 70px;
+            height: 70px;
+            margin: 12px;
+        }
+        .footer__parrafo {
+            width: auto;
+            font-weight: 600;
+            font-size: larger;
+        }
+        .parrafo {
+            display: inline;
+            border: 3px dashed black;
+            border-width: auto;
+            font-size: 15px;
+        }
     }
-
-    .footer__gmail {
-        grid-area: gmail;
-        
-    }
-
-    .footer__redes {
-        grid-area: redes;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .footer__derechos {
-        grid-area: derechos;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        
-      
-        
-    }
-
-    .footer__iconos {
-        width: 70px;
-        height: 70px;
-        margin: 12px;
-    }
-
-    .footer__parrafo {
-        width: auto;
-        font-weight: 600;
-        font-size: larger;
-    }
-
-    .parrafo {
-        display: inline;
-        border: 3px dashed black;
-        border-width: auto;
-        font-size: 15px;
-    }
-
     /* footer */
 }
 
@@ -339,16 +331,9 @@ main section form{
                 
             }
         }
-        
-        
-        
-        
-
     /* sobrenosotros_main */
 
-
     /* footer */
-
     footer {
         display: grid;
         grid-template-areas: "gmail"
@@ -356,52 +341,41 @@ main section form{
             "derechos";
         background-color: rgba(255, 166, 0, 0.476);
         padding: 24px;
-    }
-
-    .footer__gmail {
-        grid-area: gmail;
-        .footer__gmail-1{
-            margin-inline: 100px;
-        
+        .footer__gmail {
+            grid-area: gmail;
+            .footer__gmail-1{
+                margin-inline: 100px;
+            }
+        }
+        .footer__redes {
+            grid-area: redes;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer__derechos {
+            grid-area: derechos;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .footer__iconos {
+            width: 70px;
+            height: 70px;
+            margin: 12px;
+        }
+        .footer__parrafo {
+            width: auto;
+            font-weight: 600;
+            font-size: larger;
+        }
+        .parrafo {
+            display: inline;
+            border: 3px dashed black;
+            border-width: auto;
+            font-size: 15px;
         }
     }
-
-    .footer__redes {
-        grid-area: redes;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .footer__derechos {
-        grid-area: derechos;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      
-        
-    }
-
-    .footer__iconos {
-        width: 70px;
-        height: 70px;
-        margin: 12px;
-    }
-
-    .footer__parrafo {
-        width: auto;
-        font-weight: 600;
-        font-size: larger;
-    }
-
-    .parrafo {
-        display: inline;
-        border: 3px dashed black;
-        border-width: auto;
-        font-size: 15px;
-    }
-
     /* footer */
-
 }

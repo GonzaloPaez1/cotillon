@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .main__contacto .main__parrafo-2 .main__p {
+    .main__contacto .main__parrafo-2 .texto {
       background-color: rgba(220, 220, 220, 0.435);
       display: flex;
       flex-wrap: wrap;
@@ -47,6 +47,9 @@
 .card-subtitle {
   color: gray; }
 
+.cotillon {
+  margin-top: 40px; }
+
 .carousel {
   border: 8px solid black;
   border-radius: 15px;
@@ -54,6 +57,13 @@
 
 main section form {
   padding-inline: 100px; }
+
+.carrusel {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.reposteria {
+  margin-top: 40px; }
 
 .main__sobrenosotros {
   display: grid;
@@ -265,32 +275,32 @@ header {
     grid-template-areas: "gmail" "redes" "derechos";
     background-color: rgba(255, 166, 0, 0.476);
     padding: 24px; }
-  .footer__gmail {
-    grid-area: gmail; }
-  .footer__redes {
-    grid-area: redes;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-  .footer__derechos {
-    grid-area: derechos;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; }
-  .footer__iconos {
-    width: 70px;
-    height: 70px;
-    margin: 12px; }
-  .footer__parrafo {
-    width: auto;
-    font-weight: 600;
-    font-size: larger; }
-  .parrafo {
-    display: inline;
-    border: 3px dashed black;
-    border-width: auto;
-    font-size: 15px; }
+    footer .footer__gmail {
+      grid-area: gmail; }
+    footer .footer__redes {
+      grid-area: redes;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    footer .footer__derechos {
+      grid-area: derechos;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+    footer .footer__iconos {
+      width: 70px;
+      height: 70px;
+      margin: 12px; }
+    footer .footer__parrafo {
+      width: auto;
+      font-weight: 600;
+      font-size: larger; }
+    footer .parrafo {
+      display: inline;
+      border: 3px dashed black;
+      border-width: auto;
+      font-size: 15px; }
   /* footer */ }
 
 /* @media (min-width: 576px) and (max-width: 992)*/
@@ -388,50 +398,40 @@ header {
     grid-template-areas: "gmail" "redes" "derechos";
     background-color: rgba(255, 166, 0, 0.476);
     padding: 24px; }
-  .footer__gmail {
-    grid-area: gmail; }
-    .footer__gmail .footer__gmail-1 {
-      margin-inline: 100px; }
-  .footer__redes {
-    grid-area: redes;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; }
-  .footer__derechos {
-    grid-area: derechos;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; }
-  .footer__iconos {
-    width: 70px;
-    height: 70px;
-    margin: 12px; }
-  .footer__parrafo {
-    width: auto;
-    font-weight: 600;
-    font-size: larger; }
-  .parrafo {
-    display: inline;
-    border: 3px dashed black;
-    border-width: auto;
-    font-size: 15px; }
+    footer .footer__gmail {
+      grid-area: gmail; }
+      footer .footer__gmail .footer__gmail-1 {
+        margin-inline: 100px; }
+    footer .footer__redes {
+      grid-area: redes;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    footer .footer__derechos {
+      grid-area: derechos;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+    footer .footer__iconos {
+      width: 70px;
+      height: 70px;
+      margin: 12px; }
+    footer .footer__parrafo {
+      width: auto;
+      font-weight: 600;
+      font-size: larger; }
+    footer .parrafo {
+      display: inline;
+      border: 3px dashed black;
+      border-width: auto;
+      font-size: 15px; }
   /* footer */ }
 
 .background-centrado, .card-img-top {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-
-.boton {
-  background-color: rgba(0, 106, 255, 0.427);
-  border: 1px solid black;
-  border-radius: 2px;
-  width: 100px; }
-
-.card:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 0.5s; }
 
 * {
   margin: 0px;
@@ -476,6 +476,16 @@ p {
 
 ul {
   list-style: none; }
+
+.boton {
+  background-color: rgba(0, 106, 255, 0.427);
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100px; }
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s; }
 
 /* selector de tipo ID # */
 /* nomenclatura */
