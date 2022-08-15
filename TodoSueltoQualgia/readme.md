@@ -1,5 +1,5 @@
 <h1>cotillon</h1>
-<p>negocio cotillon minorista/mayorista</p>
+<p>negocio cotillon mayorista</p>
 
 <h2>tegnologinas usadas</h2>
 <ul>
