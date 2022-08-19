@@ -50,6 +50,12 @@
 .cotillon {
   margin-top: 40px; }
 
+.main__ayuda {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4px;
+  font-weight: 550; }
+
 .carousel {
   border: 8px solid black;
   border-radius: 15px;
