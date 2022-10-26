@@ -100,40 +100,76 @@
 // console.log(productos);
 
 
-const productos = [
-  {id: 1, nombre: "cucharas", precio: 100},
-  {id: 2, nombre: "platos", precio: 150},
-  {id: 3, nombre: "tenedores", precio: 200},
-  {id: 4, nombre: "globos", precio: 250},
-  {id: 5, nombre: "girnaldas", precio: 300,}
-  ];
+// const productos = [
+//   {id: 1, nombre: "cucharas", precio: 100},
+//   {id: 2, nombre: "platos", precio: 150},
+//   {id: 3, nombre: "tenedores", precio: 200},
+//   {id: 4, nombre: "globos", precio: 250},
+//   {id: 5, nombre: "girnaldas", precio: 300,}
+//   ];
 
 
-function filtrar(arr, filtro, param){
-  return arr.filter((el) => {
-    if(param == "precio"){
-      return el[param] <= parseFloat(filtro);
-    }else{
-    return el[param].includes(filtro);
+// function filtrar(arr, filtro, param){
+//   return arr.filter((el) => {
+//     if(param == "precio"){
+//       return el[param] <= parseFloat(filtro);
+//     }else{
+//     return el[param].includes(filtro);
+//     }
+//   })
+// }
+
+// let param = "nombre"
+// let search = 190;
+
+// let opcion = prompt("Quieres filtrar por precio preciona 1 \nQuieres buscar un producto presiona 2\nQuieres salir presiona cualquier tecla")
+// if (opcion == 1){
+//   serch = prompt("ingresa monto a filtrar");
+//   param = "precio";
+// }else if(opcion == 2){
+//   search = prompt("ingresa producto a buscar");
+// }
+// else{
+//   alert("vuelva pronto");
+// }
+
+// let resultado = filtrar(productos, search, param);
+
+// console.log(resultado);
+
+
+function cargarUsuario(array, usuario, contraseña, correo){
+  return array.push(usuario, contraseña, correo);
+}
+
+
+
+// -----------  INICIO DE SECION  ------------------------
+
+function obtenerListaDeUsuarios(){
+  let listaUsuarios = JSON.parse(localStorage.getItem('listaUsuariosLocalStorage'));
+
+  if(listaUsuarios == null){
+    listaUsuarios = [
+      ['1', 'gonzalo', "gonza@gmail.com", "123",],
+      ["2", "francisco","gonzalo@gmail.com", "1234"],
+      ["3", "fernando", "gonzalopaez@gmail.com", "asd"],
+      ["4", "tomas", "gonzapaez@gmail.com", "asd"],
+    ]
+  }
+    return listaUsuarios;
+}
+function verificadorDeUsuarios(paramUsuario, paramContrasenia){
+    let listaUsuarios = obtenerListaDeUsuarios();
+    let EstadoUsuario = false;
+
+    for(let i = 0; i < listaUsuarios.length; i++){
+      if(paramUsuario == listaUsuarios[i][1] && paramContrasenia == listaUsuarios[i][3]){
+        EstadoUsuario = true;
+        sessionStorage.setItem('usuarioOn', listaUsuarios[i][1]);
+      } 
     }
-  })
+    return EstadoUsuario;
 }
 
-let param = "nombre"
-let serch = 190;
-
-let opcion = prompt("Quieres filtrar por precio preciona 1 \nQuieres buscar un producto presiona 2\nQuieres salir presiona cualquier tecla")
-if (opcion == 1){
-  serch = prompt("ingresa monto a filtrar");
-  param = "precio";
-}else if(opcion == 2){
-  serch = prompt("ingresa producto a buscar");
-}
-else{
-  alert("vuelva pronto");
-}
-
-let resultado = filtrar(productos, serch, param);
-
-console.log(resultado);
 
