@@ -46,4 +46,4 @@ btnRegistrar.addEventListener("click", (e) =>{
         
 });
 
-console.log("hola");
+

@@ -37,8 +37,10 @@
     <!-- header-->
     <!-- main: contenido principal -->
     <main>
+        <p id="bienvenida"></p>
         <h1>COTILLÓN <br> "DULCE Y SALADO"</h1>
         <h2>(Ventas Mayoristas)</h2>
+        
         <section class="container-lg carrusel">
             <div id="carouselExampleControls" class="carousel slide" style="width: auto;" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -69,17 +71,18 @@
         <section class="mx-5 mb-5">
             <form>
                 <div class="mb-3">
-                    <label type="text">Usuario</label>
-                    <input type="text" class="form-control" id="usuario">
+                    <label type="text" for="usuarioReg">Usuario</label>
+                    <input type="text" class="form-control" id="usuarioReg">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="contrasenia">
+                    <label class="form-label" for="contraseniaReg">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseniaReg">
                 </div>
                 <div class="mb-3 form-check">
 
-                    <button type="button" class="btn btn-info" id="botonIngresar">enviar</button>
+                    <button type="button" class="btn btn-info" id="ingresar">enviar</button>
                     <br><br>
+                    <p id="warnings"></p>
                     <strong>
                         <label class="form-check-label" for="exampleCheck1">¿No tienes cuenta?
                             <a href="">Registrate aquí</a></label></strong>
