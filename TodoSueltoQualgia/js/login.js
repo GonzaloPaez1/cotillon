@@ -28,3 +28,4 @@ btnIngresar.addEventListener("click", (e) =>{
     inicioSesion(usuariosLS)
 
 });
+console.log("hola")
