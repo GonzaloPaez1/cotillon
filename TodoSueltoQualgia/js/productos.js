@@ -30,7 +30,7 @@ fetch("../data/data.json")
                     <h5 class="card-title">${product.nombre}</h5>
                     <h6 class="card-subtitle mb-2 mt-2">x10 unidades</h6>
                     <p class="card-text">25x25x25</p>
-                    <h4 class="card-text">$${product.precio}</h4>
+                    <h4 class="card-text cardPrecio" id="precioProducto">$${product.precio}</h4>
                     <a href="" class="btn btn-primary">agregar al carrito</a>
                 </div>
             </div>

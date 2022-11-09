@@ -1,13 +1,14 @@
 const btnIngresar = document.querySelector("#ingresar"),
 usuarioReg = document.querySelector("#usuarioReg"),
-contraseniaReg = document.querySelector("#contraseniaReg");
+contraseniaReg = document.querySelector("#contraseniaReg"),
+cardPrecio = document.getElementsByClassName("cardPrecio");
 
 function inicioSesion(usuarios){
     let userFound = usuarios.find((usuario)=>{
         return usuario.username === usuarioReg.value && usuario.password === contraseniaReg.value
     })
-let ingreso = false;
-console.log(ingreso);
+
+
 if (userFound){
     window.location.href= "./index.html";
     ingreso = true;
@@ -30,7 +31,11 @@ const usuariosLS = recuperarLS();
 btnIngresar.addEventListener("click", (e) =>{
     e.preventDefault();
     inicioSesion(usuariosLS);
+    mostrarPrecios();
     
 });
 
 
+function mostrarPrecios(){
+    cardPrecio.classList.remove(cardPrecio);
+}

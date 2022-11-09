@@ -6,6 +6,7 @@ const register = document.querySelector(".register"),
     checkBox = document.getElementById("checkBox"),
     aviso = document.getElementById("aviso"),
     password2 = document.getElementById("password2");
+    
 
 let usuarios;
 let estado = false;
@@ -82,3 +83,4 @@ function redireccion(){
         location.href = "../index.html"
     },1000);
 }
+
