@@ -5,7 +5,10 @@ const register = document.querySelector(".register"),
     btnRegistrar = document.querySelector("#registrar"),
     checkBox = document.getElementById("checkBox"),
     aviso = document.getElementById("aviso"),
-    password2 = document.getElementById("password2");
+    password2 = document.getElementById("password2"),
+    avisoUsername = document.getElementById("avisoUsername"),
+    avisoEmail = document.getElementById("avisoEmail"),
+    avisoPassword = document.getElementById("avisoPassword");
     
 
 let usuarios;
@@ -49,6 +52,7 @@ btnRegistrar.addEventListener("click", (e) => {
         password.value,
         checkBox.checked,
     );
+    limpiarAvisos();
     validarFormulario();
     if (estado) {
         guardarUsuario(newUser);
@@ -60,19 +64,27 @@ btnRegistrar.addEventListener("click", (e) => {
 
 
 
+function limpiarAvisos(){
+    avisoUsername.innerHTML = "";
+    avisoEmail.innerHTML = "";
+    avisoPassword.innerHTML = "";
 
+}
 function validarFormulario() {
     if(username.value == "" || username.value.length < 5){
-        aviso.innerText = `usuario tiene que tener al menos 5 letras`
+        avisoUsername.innerText = `El usuario tiene que tener al menos 5 letras!`
+        avisoUsername.classList = "avisos"
     }
     else if(email.value == ""){
-        aviso.innerText = `email incompleto`
+        avisoEmail.innerText = `Email incompleto!`
+        avisoEmail.classList = "avisos"
     }
     else if (password.value != password2.value || password.value == "" || password2.value == "") {
-        aviso.innerText = `revisa que las contraseñas`
+        avisoPassword.innerText = `Revisa las contraseñas!`
+        avisoPassword.classList = "avisos"
     } 
     else {
-        aviso.innerText = `enviando...`
+        enviando();
         estado = true;
     }return estado
 }
@@ -84,3 +96,17 @@ function redireccion(){
     },1000);
 }
 
+function enviando(){
+    swal.fire({
+        title: '<h1>"cargando..."</h1>',
+        icon: "success",
+        width: "50%",
+        bakcdrop: true,
+        timer: 850,
+        timerProgressBar: true,
+        allowOutsideClick: false,
+        allowEnterKey: false,
+        allowEscapeKey: false,
+        
+    });
+}
