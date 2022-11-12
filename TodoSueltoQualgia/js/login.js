@@ -3,6 +3,8 @@ const btnIngresar = document.querySelector("#ingresar"),
     contraseniaReg = document.querySelector("#contraseniaReg"),
     avisoIS = document.getElementById("avisoIS");
 
+
+
 function inicioSesion(usuarios) {
     let userFound = usuarios.find((usuario) => {
         return usuario.username === usuarioReg.value && usuario.password === contraseniaReg.value
@@ -26,9 +28,10 @@ function recuperarLS() {
 
 const usuariosLS = recuperarLS();
 
+
 btnIngresar.addEventListener("click", (e) => {
-    e.preventDefault();
-    inicioSesion(usuariosLS);
+e.preventDefault();
+inicioSesion(usuariosLS);
    
 });
 

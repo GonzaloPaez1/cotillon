@@ -117,6 +117,43 @@ main section form {
       width: 400px;
       height: 400px; }
 
+.divCarrito {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: white;
+  background-color: #250303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 10;
+  top: 12vh; }
+
+.mostrarCarrito {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  width: 100%; }
+
+.mostrarCarritoBoton {
+  cursor: pointer; }
+
+.mostrarCarritoContenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 15px; }
+
+.mostrarCarritoTotal {
+  font-size: 25;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px; }
+
 /* footer */
 footer {
   display: grid;
@@ -516,12 +553,14 @@ ul {
   box-shadow: 0px 3px 10px 7px rgba(255, 166, 0, 0.502);
   transition: all 0.5s; }
 
-.cardPrecio {
-  display: none; }
-
 .avisos {
   margin: 5px;
   color: red; }
+
+.carritoCompras {
+  width: 50px;
+  height: 50px;
+  cursor: pointer; }
 
 /* selector de tipo ID # */
 /* nomenclatura */
